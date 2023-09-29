@@ -22,7 +22,7 @@ const orderSchema = new mongoose.Schema({
     default: Date.now
   },
   branch: {
-    type: Number,
+    type: String,
     required: true
   },
   customer: {

@@ -49,7 +49,7 @@ router.post('/auto', authenticateToken, async (_req, res) => {
         itemType: itemTypes[Math.floor(Math.random() * itemTypes.length)],
         orderState: orderStates[Math.floor(Math.random() * orderStates.length)],
         lastUpdateTime: generateRandomDate(),
-        branch: Math.floor(Math.random() * 4) + 1,
+        branch: `Branch ${Math.floor(Math.random() * 20) + 1}`,
         customer: `Customer${i + 1}`,
       });
 
