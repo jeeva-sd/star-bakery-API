@@ -28,8 +28,8 @@ The API will be running on `http://localhost:1650`.
 - **GET /api/order**: Get a list of all orders.
 
 - **POST /api/order/**: Create a new order and return its ID.
-  Request Body:
-  {
+ - Request Body:
+ - {
     "itemType": "Cake",
     "orderState": "Created",
     "lastUpdateTime": "2023-09-25T10:30:00Z",
@@ -38,8 +38,8 @@ The API will be running on `http://localhost:1650`.
   }
 
 - **PUT /api/order/{orderId}**: Update an existing order by its ID.
-  Request Body:
-  {
+ - Request Body:
+ - {
     "orderState": "Shipped"
   }
 
